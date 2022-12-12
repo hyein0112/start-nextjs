@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <style jsx global>
         {`
           a {
-            color: white;
+            color: blue;
           }
         `}
       </style>
