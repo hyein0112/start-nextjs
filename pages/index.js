@@ -9,7 +9,7 @@ export default function Home({ results }) {
       <div className="container">
         {results?.map((movie) => (
           <div className="movie" key={movie.id}>
-            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
+            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
             <h4>{movie.original_title}</h4>
           </div>
         ))}
@@ -32,6 +32,7 @@ export default function Home({ results }) {
           padding: 15px;
           box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
           background: #ffffff;
+          cursor: pointer;
           transition: transform 0.2s ease-in-out;
           box-sizing: border-box;
         }
